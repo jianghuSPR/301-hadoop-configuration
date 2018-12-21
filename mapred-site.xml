@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+ 	         <property>
+                    <name>mapreduce.framework.name</name>
+                    <value>yarn</value>
+                </property>
+                <!-- mr转化历史任务的rpc通信地址-->
+                <property>  
+                    <name>mapreduce.jobhistory.address</name>  
+                    <value>192.168.10.252:10020</value>  
+                </property>
+                <!-- mr转化历史任务的http通信地址-->
+                <property>  
+                    <name>mapreduce.jobhistory.webapp.address</name>  
+                    <value>192.168.10.252:19888</value>  
+                </property>
+                <!-- 会在hdfs的根目录下面创建一个history的文件夹，存放历史任务的相关运行情况-->
+                <property>
+                    <name>yarn.app.mapreduce.am.staging-dir</name>
+                    <value>/history</value>
+                </property>
+                <!-- map和reduce的日志级别-->
+                <property>
+                    <name>mapreduce.map.log.level</name>
+                    <value>INFO</value>
+                </property>
+                <property>
+                    <name>mapreduce.reduce.log.level</name>
+                    <value>INFO</value>
+                </property>
+</configuration>
