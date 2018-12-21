@@ -1,0 +1,4 @@
+         ip                      基本的软件                       运行的进程       
+       251             jdk、zk、hadoop                   NameNode、zkfc、zk、journalNode，QuorumPeerMain        
+       252             jdk、zk、hadoop                   NameNode、zkfc、zk、journalNode、datanode、ResourceManager、NodeManager，QuorumPeerMain
+       253             jdk、zk、hadoop                   zk、journalNode、datanode、QuorumPeerMain、NodeManager
